@@ -18,5 +18,5 @@ def process():
     })
 
 if __name__ == "__main__":
-    # Servidor rodando na máquina local (edge)
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=10000)
+
