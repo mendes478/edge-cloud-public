@@ -3,9 +3,10 @@ import time
 
 app = Flask(__name__)
 
-@app.route("/process", methods=["POST"])
-def process():
-    data = request.json.get("value", 0)
+@app.route("/")
+def home():
+    return "Servidor rodando!"
+
 
     # Simulação de processamento pesado (ex.: IA, análise, etc.)
     time.sleep(0.2)  # 200 ms
