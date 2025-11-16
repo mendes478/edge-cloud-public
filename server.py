@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import time
+import os
 
 app = Flask(__name__)
 
@@ -23,7 +24,5 @@ def process():
         "output": result
     })
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
-
-
+# NÃO usar app.run() para deploy no Render
+# O Render vai rodar o app via Gunicorn automaticamente
